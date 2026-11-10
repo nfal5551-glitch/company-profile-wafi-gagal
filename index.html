@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.permainan_digitalnusantarafuturistik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #040817;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 0, 128, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 243, 255, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.25) 0%, transparent 60%),
+                linear-gradient(rgba(0, 243, 255, 0.08) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.08) 2px, transparent 2px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+            background-attachment: fixed;
+            color: #e2e8f0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: rgba(8, 12, 26, 0.92);
+            backdrop-filter: blur(14px);
+            border-bottom: 2px solid rgba(0, 243, 255, 0.6);
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+        }
+
+        .nav-logo-text {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #00f3ff;
+            text-shadow: 0 0 10px #00f3ff;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #94a3b8;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00f3ff;
+            text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+        }
+
+        .hero {
+            padding: 4rem 2rem 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(3, 6, 17, 0.75) 0%, rgba(8, 12, 26, 0.95) 100%);
+            border-bottom: 2px solid rgba(255, 0, 128, 0.6);
+            box-shadow: 0 10px 35px rgba(255, 0, 128, 0.25);
+        }
+
+        .founders-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto 2.5rem auto;
+            text-align: left;
+        }
+
+        .founder-card {
+            background: rgba(13, 20, 38, 0.95);
+            border: 2px solid #00f3ff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .founder-avatar-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00f3ff, #ff0080);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: #030611;
+            font-weight: bold;
+            box-shadow: 0 0 20px #ff0080;
+            margin-bottom: 1.2rem;
+        }
+
+        .founder-card h2 {
+            color: #00f3ff;
+            font-size: 1.4rem;
+            text-shadow: 0 0 10px #00f3ff;
+            margin-bottom: 0.3rem;
+        }
+
+        .founder-role {
+            color: #ff0080;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .vision-mission-box {
+            text-align: left;
+            background: rgba(3, 6, 17, 0.7);
+            border: 1px solid rgba(255, 0, 128, 0.4);
+            border-radius: 12px;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        .vision-mission-box h4 {
+            color: #ff0080;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .vision-mission-box p {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-shadow: 0 0 15px #00f3ff, 0 0 30px #ff0080;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .spin-section, .game-section, .catch-section {
+            background: rgba(13, 20, 38, 0.95);
+            border: 2px solid #00f3ff;
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 650px;
+            margin: 2rem auto;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.5), inset 0 0 15px rgba(255, 0, 128, 0.3);
+            position: relative;
+        }
+
+        .game-section {
+            border-color: #ff8c00;
+            box-shadow: 0 0 30px rgba(255, 140, 0, 0.5), inset 0 0 15px rgba(0, 243, 255, 0.3);
+        }
+
+        .catch-section {
+            border-color: #9d00ff;
+            box-shadow: 0 0 30px rgba(157, 0, 255, 0.5), inset 0 0 15px rgba(0, 243, 255, 0.3);
+        }
+
+        .spin-section h2 {
+            color: #ff0080;
+            text-shadow: 0 0 10px #ff0080;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .game-section h2 {
+            color: #ff8c00;
+            text-shadow: 0 0 10px #ff8c00;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .catch-section h2 {
+            color: #00f3ff;
+            text-shadow: 0 0 10px #00f3ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 1.5rem auto;
+        }
+
+        .wheel-pointer {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 25px solid #ff0080;
+            z-index: 100;
+            filter: drop-shadow(0 0 8px #ff0080);
+        }
+
+        #wheelCanvas {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 4px solid #00f3ff;
+            box-shadow: 0 0 20px #00f3ff;
+            transition: transform 4s cubic-bezier(0.15, 0.99, 0.15, 0.99);
+        }
+
+        .dash-container, .catch-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 220px;
+            margin: 1rem auto;
+            border: 3px solid #ff8c00;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #020512;
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+            cursor: pointer;
+        }
+
+        .catch-container {
+            border-color: #9d00ff;
+            box-shadow: 0 0 20px rgba(157, 0, 255, 0.4);
+            cursor: ew-resize;
+            touch-action: none;
+        }
+
+        #dashCanvas, #catchCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .btn-spin, .btn-game, .btn-catch, .btn-buy {
+            background: linear-gradient(90deg, #ff0080, #ff8c00);
+            color: #fff;
+            border: none;
+            padding: 0.9rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
+            transition: all 0.3s;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .btn-spin:hover, .btn-game:hover, .btn-catch:hover, .btn-buy:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #ff0080;
+        }
+
+        .btn-spin:disabled, .btn-game:disabled, .btn-catch:disabled {
+            background: #475569;
+            color: #94a3b8;
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .spin-result, .game-result, .catch-result {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #00f3ff;
+            text-shadow: 0 0 10px #00f3ff;
+            min-height: 30px;
+        }
+
+        .promo-banner {
+            background: linear-gradient(90deg, rgba(0, 243, 255, 0.35), rgba(255, 0, 128, 0.35));
+            border: 2px solid #00f3ff;
+            border-radius: 14px;
+            padding: 1.4rem;
+            margin: 2.5rem auto -2rem auto;
+            max-width: 1200px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.7), inset 0 0 18px rgba(255, 0, 128, 0.5);
+            animation: pulseGlow 2.5s infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 15px rgba(0, 243, 255, 0.4); }
+            100% { box-shadow: 0 0 35px rgba(255, 0, 128, 0.9), 0 0 20px rgba(0, 243, 255, 0.9); }
+        }
+
+        .promo-banner h3 {
+            color: #ffffff;
+            text-shadow: 0 0 12px #ff0080, 0 0 25px #ff0080;
+            font-size: 1.4rem;
+            letter-spacing: 1.5px;
+        }
+
+        .promo-banner p {
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            margin-top: 0.4rem;
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: 4.5rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 2.8rem;
+            color: #ffffff;
+            font-size: 2.3rem;
+            text-shadow: 0 0 15px rgba(0, 243, 255, 0.8);
+            letter-spacing: 1px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(13, 20, 38, 0.92);
+            border: 1px solid rgba(0, 243, 255, 0.4);
+            border-radius: 16px;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #00f3ff;
+            box-shadow: 0 0 35px rgba(0, 243, 255, 0.7);
+        }
+
+        /* PERUBAHAN: kotak gambar mengikuti bentuk gambar asli (1516x704) */
+        .card-img-container {
+            width: 100%;
+            aspect-ratio: 1516 / 704;
+            background-color: #02040a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 243, 255, 0.3);
+            position: relative;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .tag {
+            background-color: rgba(0, 243, 255, 0.15);
+            color: #00f3ff;
+            border: 1px solid rgba(0, 243, 255, 0.5);
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            width: fit-content;
+            margin-bottom: 0.8rem;
+            box-shadow: 0 0 8px rgba(0, 243, 255, 0.3);
+        }
+
+        .card h3 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .price-main {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #00f3ff;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.8);
+            transition: all 0.3s;
+        }
+
+        .price-old {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-decoration: line-through;
+            display: none;
+        }
+
+        .badge-sale {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #ff0080;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.35rem 0.75rem;
+            border-radius: 8px;
+            box-shadow: 0 0 12px #ff0080;
+            z-index: 10;
+        }
+
+        .qty-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            background: rgba(3, 6, 17, 0.6);
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            width: fit-content;
+        }
+
+        .qty-box label {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+
+        .qty-btn {
+            background: #00f3ff;
+            color: #030611;
+            border: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .qty-btn:hover {
+            background: #ff0080;
+            color: #ffffff;
+            box-shadow: 0 0 10px #ff0080;
+        }
+
+        .qty-input {
+            width: 40px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            color: #00f3ff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .cart-summary-box {
+            background: rgba(13, 20, 38, 0.95);
+            border: 2px solid #00f3ff;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.4);
+        }
+
+        .cart-summary-box h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px #00f3ff;
+        }
+
+        .summary-total-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ff0080;
+            text-shadow: 0 0 15px #ff0080;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+
+        .btn-checkout {
+            background: linear-gradient(90deg, #00f3ff, #0088ff);
+            color: #030611;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .btn-checkout:hover {
+            background: linear-gradient(90deg, #ff0080, #ff8c00);
+            color: #ffffff;
+            box-shadow: 0 0 30px #ff0080;
+        }
+
+        .section-box {
+            max-width: 900px;
+            margin: 4.5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-box h1 {
+            font-size: 2.3rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            text-shadow: 0 0 12px #00f3ff;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .content-card {
+            background: rgba(13, 20, 38, 0.92);
+            border: 1px solid rgba(0, 243, 255, 0.4);
+            padding: 2.5rem;
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            margin-bottom: 3rem;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+
+        .content-card h2 {
+            color: #ff0080;
+            text-shadow: 0 0 10px #ff0080;
+            margin-top: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        footer {
+            background-color: #020409;
+            border-top: 2px solid #00f3ff;
+            color: #64748b;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+
+        @media (max-width: 992px) {
+            .card-grid, .founders-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home" class="nav-logo-text">www.permainan_digitalnusantarafuturistik</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#spin">Lucky Spin</a></li>
+                <li><a href="#game">Extreme Dash</a></li>
+                <li><a href="#catchGame">Catch Game</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content" style="max-width: 1100px; margin: 0 auto;">
+            <h1>Dunia Mainan Tradisional Masa Kini</h1>
+            <p>Melestarikan warisan budaya Indonesia melalui inovasi mainan interaktif modern berbasis teknologi canggih, AR, dan sensor pintar.</p>
+
+            <!-- PROFIL & VISI MISI PENDIRI -->
+            <div class="founders-grid">
+                <!-- Pendiri 1: Nabhan 'Abqary F.R. -->
+                <div class="founder-card">
+                    <div class="founder-avatar-icon">N</div>
+                    <h2>Nabhan 'Abqary F.R.</h2>
+                    <div class="founder-role">Co-Founder & Tech Innovator</div>
+                    <div class="vision-mission-box">
+                        <h4>Visi & Misi Inovasi:</h4>
+                        <p>Membangun dan mengembangkan permainan tradisional dengan teknologi masa depan yang dirancang dengan lampu neon mewah yang menarik perhatian anak-anak di masa depan.</p>
+                    </div>
+                </div>
+
+                <!-- Pendiri 2: Falah Wafi Widyanata -->
+                <div class="founder-card">
+                    <div class="founder-avatar-icon">F</div>
+                    <h2>Falah Wafi Widyanata</h2>
+                    <div class="founder-role">Co-Founder & Business Strategist</div>
+                    <div class="vision-mission-box">
+                        <h4>Visi & Misi Perusahaan:</h4>
+                        <p>Membuat perusahaan penjualan permainan nusantara yg futuristik terbesar didunia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUCKY SPIN WHEEL -->
+    <section id="spin" class="spin-section">
+        <h2>🎰 LUCKY SPIN DISKON NUSANTARA 🎰</h2>
+        <p>Putar roda keberuntungan untuk klaim diskon! (Hanya 1x kesempatan)</p>
+        
+        <div class="wheel-container">
+            <div class="wheel-pointer"></div>
+            <canvas id="wheelCanvas" width="300" height="300"></canvas>
+        </div>
+
+        <button id="spinBtn" class="btn-spin" onclick="spinWheel()">PUTAR RODA DISKON (1X)</button>
+        <div id="spinResult" class="spin-result">Klik tombol untuk memutar!</div>
+    </section>
+
+    <!-- EXTREME BIRD & BLOCK DASH -->
+    <section id="game" class="game-section">
+        <h2>🔥 EXTREME BIRD & BLOCK DASH 🔥</h2>
+        <p>Awas balok bawah & <strong>Burung Terbang</strong>! (Hanya 1x kesempatan main)</p>
+        
+        <div class="dash-container" onclick="dashJump()">
+            <canvas id="dashCanvas" width="500" height="200"></canvas>
+        </div>
+
+        <button id="dashStartBtn" class="btn-game" onclick="startDashGame()">MULAI EXTREME DASH (1X)</button>
+        <div id="dashResult" class="game-result">Tekan [SPASI] atau Klik Kotak Game untuk Melompat!</div>
+    </section>
+
+    <!-- CATCH GAME (DENGAN BATAS WAKTU 30 DETIK) -->
+    <section id="catchGame" class="catch-section">
+        <h2>⭐ NUSANTARA CATCH GAME ⭐</h2>
+        <p id="catchStatusMsg">Syarat: Beli minimal <strong>1 pcs dari ke-6 produk sekaligus</strong> untuk membuka game ini! (Hadiah: <strong>Diskon 20%</strong>, Waktu: 30 Detik)</p>
+        
+        <div class="catch-container" id="catchContainer">
+            <canvas id="catchCanvas" width="500" height="220"></canvas>
+        </div>
+
+        <button id="catchStartBtn" class="btn-catch" onclick="startCatchGame()" disabled>MULAI CATCH GAME (BELUM MEMENUHI SYARAT)</button>
+        <div id="catchResult" class="catch-result">Pesan semua 6 item barang minimal 1 pcs untuk membuka game ini!</div>
+    </section>
+
+    <div class="promo-banner">
+        <h3>⚡ PROGRESSIVE LIMITED EDITION ⚡</h3>
+        <p>Pilih dan beli seluruh jenis produk untuk menikmati pengalaman mainan Nusantara modern berkualitas tinggi!</p>
+    </div>
+
+    <!-- KATALOG PRODUK MENGGUNAKAN FOLDER LOKAL Image/ -->
+    <section id="produk" class="products">
+        <h2>Koleksi 6 Mainan Nusantara Modern</h2>
+        <div class="card-grid">
+            
+            <!-- Produk 1 -->
+            <div class="card">
+                <span class="badge-sale" id="badge1">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 1.jpg" alt="Gasing Cyber LED Magnetic" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Aksi & Arena</span>
+                        <h3>1. Gasing Cyber LED Magnetic</h3>
+                        <p>Gasing berlampu neon RGB yang bertarung di arena peluncur magnetik dengan efek suara pertempuran.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price1">Rp250.000</span>
+                            <span class="price-old" id="old1">Rp250.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty1', -1)">-</button>
+                            <input type="text" id="qty1" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty1', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('Gasing Cyber LED Magnetic', 250000, 'qty1')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="card">
+                <span class="badge-sale" id="badge2">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 2.jpg" alt="AR Hologram Wayang Heroes" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Teknologi AR</span>
+                        <h3>2. AR Hologram Wayang Heroes</h3>
+                        <p>Figur karakter wayang glow in the dark yang bisa hidup dalam bentuk animasi 3D dan bersuara saat di-scan pakai HP.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price2">Rp299.000</span>
+                            <span class="price-old" id="old2">Rp299.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty2', -1)">-</button>
+                            <input type="text" id="qty2" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty2', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('AR Hologram Wayang Heroes', 299000, 'qty2')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="card">
+                <span class="badge-sale" id="badge3">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 3.jpg" alt="Congklak Crystal Smart Sensor" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Board Game</span>
+                        <h3>3. Congklak Crystal Smart Sensor</h3>
+                        <p>Papan congklak akrilik transparan dengan sensor pintar yang bisa menghitung skor otomatis dan mengeluarkan suara combo.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price3">Rp350.000</span>
+                            <span class="price-old" id="old3">Rp350.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty3', -1)">-</button>
+                            <input type="text" id="qty3" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty3', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('Congklak Crystal Smart Sensor', 350000, 'qty3')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="card">
+                <span class="badge-sale" id="badge4">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 4.jpg" alt="Egrang Balance Pro" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517649763962-0c6232660d02?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Motorik & Fisik</span>
+                        <h3>4. Egrang Balance Pro</h3>
+                        <p>Egrang aluminium yang bisa diatur tingginya, dilapisi karet ergonomis yang aman, serta memiliki roda berlampu LED.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price4">Rp275.000</span>
+                            <span class="price-old" id="old4">Rp275.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty4', -1)">-</button>
+                            <input type="text" id="qty4" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty4', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('Egrang Balance Pro', 275000, 'qty4')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 5 -->
+            <div class="card">
+                <span class="badge-sale" id="badge5">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 5.jpg" alt="Pletokan Safe-Foam Shooter" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Tembak Target</span>
+                        <h3>5. Pletokan Safe-Foam Shooter</h3>
+                        <p>Tembakan mainan mirip Nerf yang aman menggunakan peluru busa empuk, tetapi mempertahankan mekanisme kokang bambu tradisional.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price5">Rp220.000</span>
+                            <span class="price-old" id="old5">Rp220.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty5', -1)">-</button>
+                            <input type="text" id="qty5" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty5', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('Pletokan Safe-Foam Shooter', 220000, 'qty5')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 6 -->
+            <div class="card">
+                <span class="badge-sale" id="badge6">LIMITED</span>
+                <div class="card-img-container">
+                    <img src="Image/gambar 6.jpg" alt="Layangan Glow-Gyo Control" class="card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1508873696983-2df5c92063c7?auto=format&fit=crop&w=400&q=80';">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="tag">Aktivitas Udara</span>
+                        <h3>6. Layangan Glow-Gyo Control</h3>
+                        <p>Layangan kain parasut kuat yang dilengkapi dengan lampu fiber-optic agar bisa menyala indah saat diterbangkan pada malam hari.</p>
+                    </div>
+                    <div>
+                        <div class="price-container">
+                            <span class="price-main" id="price6">Rp240.000</span>
+                            <span class="price-old" id="old6">Rp240.000</span>
+                        </div>
+                        <div class="qty-box">
+                            <label>Jumlah:</label>
+                            <button class="qty-btn" onclick="ubahQty('qty6', -1)">-</button>
+                            <input type="text" id="qty6" value="0" readonly class="qty-input">
+                            <button class="qty-btn" onclick="ubahQty('qty6', 1)">+</button>
+                        </div>
+                        <button class="btn-buy" onclick="pesanSatuan('Layangan Glow-Gyo Control', 240000, 'qty6')">Beli Satuan</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TOTAL KESELURUHAN -->
+        <div class="cart-summary-box">
+            <h3>🛒 TOTAL KESELURUHAN BELANJA ANDA</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem;">Akumulasi total dari seluruh item barang yang Anda pilih:</p>
+            <div id="grandTotalDisplay" class="summary-total-price">Rp0</div>
+            <button class="btn-checkout" onclick="checkoutSemua()">Checkout Semua via WhatsApp</button>
+        </div>
+    </section>
+
+    <section id="kontak" class="section-box">
+        <h1>Hubungi Kami</h1>
+        <p class="subtitle">Tertarik bekerja sama atau memesan produk mainan NusaPlay?</p>
+        <div class="content-card">
+            <h2>Kantor & Workshop NusaPlay</h2>
+            <p><strong>Alamat:</strong> Jl. Kyai Dasuki No. 1, Desa Lebo, Kecamatan Sidoarjo, Kabupaten Sidoarjo, Jawa Timur</p>
+            <p><strong>Email:</strong> support@nusaplaydigital.id</p>
+            <p><strong>WhatsApp:</strong> 0822 4575 6595</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NusaPlay Digital. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        const productsData = [
+            { id: 1, name: "Gasing Cyber LED Magnetic", basePrice: 250000 },
+            { id: 2, name: "AR Hologram Wayang Heroes", basePrice: 299000 },
+            { id: 3, name: "Congklak Crystal Smart Sensor", basePrice: 350000 },
+            { id: 4, name: "Egrang Balance Pro", basePrice: 275000 },
+            { id: 5, name: "Pletokan Safe-Foam Shooter", basePrice: 220000 },
+            { id: 6, name: "Layangan Glow-Gyo Control", basePrice: 240000 }
+        ];
+
+        const options = [
+            { label: "Diskon 10%", discount: 0.10, color: "#00f3ff" },
+            { label: "Diskon 5%",  discount: 0.05, color: "#ff8c00" },
+            { label: "Diskon 25%", discount: 0.25, color: "#9d00ff" },
+            { label: "Coba Lagi",  discount: 0,    color: "#475569" },
+            { label: "ZONK!",      discount: 0,    color: "#334155" },
+            { label: "DISKON 50%", discount: 0.50, color: "#ff0080" }
+        ];
+
+        let spinDiscount = 0;
+        let gameDiscount = 0;
+        let catchDiscount = 0;
+        let hasSpun = false;
+        let currentRotation = 0;
+        let unlockedCatch = false;
+        let hasPlayedCatch = false;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            drawWheel();
+            initDashCanvas();
+            initCatchCanvas();
+            updateGrandTotal();
+        });
+
+        /* --- LUCKY SPIN WHEEL (1X MAIN) --- */
+        function drawWheel() {
+            const canvas = document.getElementById('wheelCanvas');
+            const ctx = canvas.getContext('2d');
+            const numOptions = options.length;
+            const arcSize = (2 * Math.PI) / numOptions;
+
+            ctx.clearRect(0, 0, 300, 300);
+
+            for (let i = 0; i < numOptions; i++) {
+                const angle = i * arcSize;
+                ctx.beginPath();
+                ctx.fillStyle = options[i].color;
+                ctx.moveTo(150, 150);
+                ctx.arc(150, 150, 145, angle, angle + arcSize);
+                ctx.lineTo(150, 150);
+                ctx.fill();
+
+                ctx.save();
+                ctx.translate(150, 150);
+                ctx.rotate(angle + arcSize / 2);
+                ctx.textAlign = "right";
+                ctx.fillStyle = "#ffffff";
+                ctx.font = "bold 14px Segoe UI";
+                ctx.shadowColor = "#000";
+                ctx.shadowBlur = 4;
+                ctx.fillText(options[i].label, 130, 5);
+                ctx.restore();
+            }
+        }
+
+        function spinWheel() {
+            if (hasSpun) return;
+
+            const btn = document.getElementById('spinBtn');
+            const canvas = document.getElementById('wheelCanvas');
+            const resultDiv = document.getElementById('spinResult');
+
+            hasSpun = true;
+            btn.disabled = true;
+            btn.innerText = "PUTAR RODA (1X KESEMPATAN HABIS)";
+            resultDiv.innerText = "🌀 Roda sedang berputar...";
+
+            const numOptions = options.length;
+            const arcSize = 360 / numOptions;
+            const selectedIndex = Math.floor(Math.random() * numOptions);
+
+            const targetAngle = 360 - (selectedIndex * arcSize) - (arcSize / 2) - 90;
+            const totalRotation = currentRotation + (360 * 5) + ((targetAngle % 360) + 360) % 360;
+            currentRotation = totalRotation;
+
+            canvas.style.transform = `rotate(${totalRotation}deg)`;
+
+            setTimeout(() => {
+                const win = options[selectedIndex];
+                spinDiscount = win.discount;
+
+                if (win.discount > 0) {
+                    resultDiv.innerHTML = `🎉 SELAMAT! Anda mendapat <span style="color:#ff0080">${win.label}</span>!`;
+                } else {
+                    resultDiv.innerHTML = `😅 Ops! <span style="color:#cbd5e1">${win.label}</span>.`;
+                }
+                recalculateAllPrices();
+            }, 4000);
+        }
+
+        /* --- EXTREME DASH (1X MAIN) --- */
+        let dashCanvas, dashCtx;
+        let dashAnimationId;
+        let isDashRunning = false;
+        let hasPlayedDash = false;
+
+        let player = { x: 50, y: 140, w: 26, h: 26, vy: 0, isJumping: false };
+        let obstacles = [];
+        let dashScore = 0;
+        let gameTime =
